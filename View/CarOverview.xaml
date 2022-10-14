@@ -17,5 +17,27 @@
                 <ColumnDefinition Width="0.15*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
         </Grid>
+        <ListView Grid.Column="0" Grid.Row="0" ItemsSource="{Binding Path=Cars}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="Auto" DisplayMemberBinding="{Binding Path=Id}" />
+                    <GridViewColumn Header="Manufacturer" Width="Auto" DisplayMemberBinding="{Binding Path=Manufacturer}" />
+                    <GridViewColumn Header="Type" Width="Auto" DisplayMemberBinding="{Binding Path=Type}" />
+                    <GridViewColumn Header="Price" Width="Auto" DisplayMemberBinding="{Binding Path=Price}" />
+                    <GridViewColumn Header="NextCheck" Width="Auto" DisplayMemberBinding="{Binding Path=NextCheck}" />
+                    <GridViewColumn Header="Power" Width="Auto" DisplayMemberBinding="{Binding Path=Power}" />
+                    <GridViewColumn Header="Mileage" Width="Auto" DisplayMemberBinding="{Binding Path=Mileage}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView>
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Click="Add">
+                        
+                    </MenuItem>
+                </ContextMenu>
+            </ListView.ContextMenu>
+        </ListView>
     </Grid>
 </Window>

@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace CarAPIClient.View
 {
     /// <summary>
-    /// Interaktionslogik für CarOverview.xaml
+    /// Interaktionslogik für AddDialog.xaml
     /// </summary>
-    public partial class CarOverview : Window
+    public partial class AddDialog : Window
     {
-        public CarOverview()
+        public AddDialog()
         {
-
             InitializeComponent();
-        }
-        public void OpenAddDialog(object sender, RoutedEventArgs e)
-        {
-            AddDialog addDialog = new AddDialog();
-            addDialog.Show();
         }
     }
 }
