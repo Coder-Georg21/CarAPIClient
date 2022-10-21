@@ -30,14 +30,15 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView>
-            <ListView.ContextMenu>
-                <ContextMenu>
-                    <MenuItem Click="Add">
-                        
-                    </MenuItem>
-                </ContextMenu>
-            </ListView.ContextMenu>
-        </ListView>
+        <Button x:Name="btn" Grid.Column="1" Grid.Row="1" Content="Add" Height="30" Width="60"/>
+
+        <Popup x:Name="popup"  PlacementTarget="{Binding ElementName=btn}" Placement="Bottom"  Width="200" Height="100" Margin="0,20,0,0">
+            <Border BorderBrush="Black" BorderThickness="2" Background="AliceBlue">
+                <TextBox x:Name="txtBox" VerticalAlignment="Center" Margin="15,0,15,0"/>
+            </Border>
+        </Popup>
+
+        <TextBox x:Name="focusTarger" Text="Focus Me !" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" TextAlignment="Center" FontSize="16"/>
+
     </Grid>
 </Window>

@@ -29,5 +29,10 @@ namespace CarAPIClient.View
             AddDialog addDialog = new AddDialog();
             addDialog.Show();
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
